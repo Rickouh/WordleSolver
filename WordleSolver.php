@@ -25,7 +25,7 @@ class WordleSolver
             }
         }
 
-        $this->wordList = json_decode(file_get_contents(dirname(__FILE__) . "dico/{$wordLength}letters.txt"));
+        $this->wordList = json_decode(file_get_contents(dirname(__FILE__) . "/dico/{$wordLength}letters.txt"));
     }
 
     public function run()
@@ -135,7 +135,7 @@ class WordleSolver
             $page++;
         }
 
-        if (file_put_contents(dirname(__FILE__) . "dico/{$this->wordLength}letters.txt", json_encode($wordList))) {
+        if (file_put_contents(dirname(__FILE__) . "/dico/{$this->wordLength}letters.txt", json_encode($wordList))) {
             echo "Scrapping finished\n";
             return true;
         } else {

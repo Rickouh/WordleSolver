@@ -1,2 +1,2 @@
 # WordleSolver
-Permet de résoudre les jeux "Motus" (Exemple : https://wordle.louan.me/)
+Permet de résoudre les jeux type "Motus" (Exemple : https://wordle.louan.me/)
